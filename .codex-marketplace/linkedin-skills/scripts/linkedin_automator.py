@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 LinkedIn Skills Automation Suite — Complete Orchestrator
 Enables automated drafting, 7-day planning, post-auditing, humanizing, comment drafting,
@@ -308,63 +308,69 @@ We recorded a 3-minute behind-the-scenes walkthrough showing:
     return post
 
 def generate_weekly_plan(niche: str = 'AI Recruitment & Founder Engineering') -> list:
-    """Generate a full 7-day founder content calendar aligned with Hireomatic's Funnel."""
+    """Generate a full 7-day founder content calendar aligned with Hireomatic's 35/25/20/10/10 Content Mix."""
     plan = [
         {
             'day': 'Day 1 (Monday, 08:30)',
-            'stage': 'Attention & Problem',
-            'type': 'Problem',
-            'format': 'F7 Odd-Precision Money Ledger / Metrics Breakout',
-            'topic': 'The real cost of a bad technical hire in 2026',
-            'hook': 'We calculated the exact cost of 3 false-positive engineering hires: $182,400.',
-            'cta': 'What is your biggest bottleneck? Let\'s discuss in the comments.',
-            'action': 'Comment'
-        },
-        {
-            'day': 'Day 2 (Tuesday, 10:00)',
-            'stage': 'Education',
+            'mix': '35% Educational',
+            'stage': 'Attention & Education',
             'type': 'Educational',
-            'format': 'F17 Controlled A/B Anecdote (Founder Angle A9)',
-            'topic': 'Manual Resume Screening vs Automated Candidate Assessment',
-            'hook': 'Two hiring managers. 400 applicants each. One used resumes, the other used automated scenarios.',
-            'cta': 'Save this post or share it with an engineering founder who is hiring.',
+            'format': 'F7 Odd-Precision Money Ledger / Metrics Breakout',
+            'topic': 'The 3 metrics that determine if candidate screening works or fails in 2026',
+            'hook': '3 metrics determine whether your candidate screening pipeline works or fails in 2026.',
+            'cta': 'Save this framework or share it with an engineering founder who is hiring.',
             'action': 'Save / Share'
         },
         {
-            'day': 'Day 3 (Wednesday, 09:15)',
+            'day': 'Day 2 (Tuesday, 10:00)',
+            'mix': '20% Pain Points',
             'stage': 'Problem Discovery',
-            'type': 'Poll / Problem',
-            'format': 'F10 Contrarian + Historical Receipts',
-            'topic': 'Why job boards are becoming AI noise dumps',
-            'hook': 'Traditional job boards are doing to hiring what spam filters did to email in 2004.',
-            'cta': 'Vote below and share your team\'s policy on AI-generated resumes.',
-            'action': 'Vote / Comment'
+            'type': 'Problem',
+            'format': 'F17 Controlled A/B Anecdote (Founder Angle A9)',
+            'topic': 'Why keyword ATS filters let bad hires slip into final rounds',
+            'hook': '1,280 applicants passed through our screening pipeline last month. 84% were rejected in under 45 seconds.',
+            'cta': 'What is your biggest bottleneck when evaluating engineering talent? Let\'s discuss in the comments.',
+            'action': 'Comment'
+        },
+        {
+            'day': 'Day 3 (Wednesday, 09:15)',
+            'mix': '35% Educational',
+            'stage': 'Education & Action',
+            'type': 'Educational',
+            'format': 'F15 Explain-to-Kids (Framework teardown)',
+            'topic': 'How to replace 4-hour take-home projects with 15-minute practical scenarios',
+            'hook': 'Take-home coding projects have a 68% drop-off rate. 15-minute dynamic scenarios have an 8% drop-off.',
+            'cta': 'Bookmark this breakdown for your next engineering hiring sprint.',
+            'action': 'Save / Share'
         },
         {
             'day': 'Day 4 (Thursday, 10:00)',
+            'mix': '25% Product / AI',
             'stage': 'Product & Use Case',
-            'type': 'Use case',
+            'type': 'Product',
             'format': 'F3 Year-over-Year Pivot (Building in Public)',
-            'topic': 'How candidate evaluation agents score problem solving in real time',
+            'topic': 'Inside Hireomatic: How our scenario engine scores candidate logic without hallucinating',
             'hook': '12 months ago our system processed 50 evaluations an hour. Today it processes 2,400 with 0 hallucinated criteria.',
             'cta': 'DM me to see how we deployed this pipeline in 24 hours for our team.',
-            'action': 'DM'
+            'action': 'DM / See demo'
         },
         {
             'day': 'Day 5 (Friday, 11:30)',
+            'mix': '10% Social Proof',
             'stage': 'Case Study & Proof',
             'type': 'Case study',
             'format': 'F18 False-Binary Dissolve (Strategy)',
-            'topic': 'How a 45-person B2B SaaS cut time-to-hire from 31 days to 9 days',
+            'topic': 'How a 45-person B2B SaaS saved $62,000 in agency fees and cut time-to-hire from 31 to 9 days',
             'hook': '$62,000 saved on recruiter placement fees and 19 days shaved off time-to-hire.',
             'cta': 'Book a 15-minute engineering walkthrough (link in first comment or DM).',
             'action': 'Book demo'
         },
         {
             'day': 'Day 6 (Saturday, 10:00)',
+            'mix': '25% Product / AI',
             'stage': 'Free Trial & Beta User',
             'type': 'Free offer',
-            'format': 'F15 Explain-to-Kids (Framework teardown)',
+            'format': 'F6 Comment-Gate Lead Magnet / Free Beta',
             'topic': 'Free 100-candidate screening trial for technical founders',
             'hook': 'We are giving 10 engineering founders 100 free candidate evaluations this month.',
             'cta': 'DM me "AI100" for early access credits and candidate screening slots.',
@@ -372,13 +378,14 @@ def generate_weekly_plan(niche: str = 'AI Recruitment & Founder Engineering') ->
         },
         {
             'day': 'Day 7 (Sunday, 17:00)',
-            'stage': 'Product Demo',
-            'type': 'Product demo',
+            'mix': '10% Founder / Brand',
+            'stage': 'Founder Story',
+            'type': 'Founder reflection',
             'format': 'F4 Time-Anchor Confession (Founder reflection)',
-            'topic': 'Interactive 3-minute walkthrough of Hireomatic candidate leaderboard',
-            'hook': 'Traditional ATS takes 2 weeks to triage. Our agent does it in 15 minutes.',
-            'cta': 'DM "DEMO" to get a 3-minute recorded interactive walkthrough.',
-            'action': 'DM "DEMO"'
+            'topic': 'Why we scrapped 6 weeks of code when our first automated screening model failed',
+            'hook': 'In November 2024, our first automated screening trial failed completely. Here is why we scrapped 6 weeks of code:',
+            'cta': 'What is one major architectural bet you had to scrap as a founder? Let\'s discuss below.',
+            'action': 'Comment / Connect'
         }
     ]
     return plan

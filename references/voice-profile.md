@@ -39,11 +39,12 @@ How your writing actually sounds. Be specific; examples beat adjectives.
 
 - You are: Muizz Shaikh — Founder & Builder at Hireomatic (building AI recruitment automation & candidate intelligence workflows).
 - Your audience (ICP): Founders, Heads of Talent, Hiring Managers, Tech Leaders, Recruiters, and Engineering Leaders hiring technical talent.
-- Your content pillars:
-  1. AI in hiring & recruitment automation (killing manual resume screening, boosting signal-to-noise ratio).
-  2. Building in public & founder engineering (systems design, real metrics, infrastructure, product decisions).
-  3. The truth about modern talent acquisition (why traditional job boards fail, inbound vs outbound engineering).
-  4. Practical AI workflows (how autonomous agents change daily business operations).
+- Your content pillars & distribution mix:
+  - **35% Educational** (teach recruiters and engineering leads something useful)
+  - **25% Product/AI** (show what Hireomatic actually does with scenario challenges and real-time scoring)
+  - **20% Pain points** (highlight acute recruitment problems: 500-applicant inbox stacks, false positives, 30-day hiring lag)
+  - **10% Social proof** (feedback, customer metrics, demo walk-throughs, beta user cohorts)
+  - **10% Founder/brand** (build trust, founder transparency, systems architecture, and personality)
 
 ## 3. Hard rules (always / never)
 
