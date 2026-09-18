@@ -27,6 +27,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
+if hasattr(sys.stdout, "reconfigure"):
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+        sys.stderr.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
+
 from dotenv import load_dotenv
 load_dotenv(ROOT / '.env')
 
@@ -416,11 +423,15 @@ Building in public. If you are hiring technical talent or scaling engineering te
 
 def main():
     parser = argparse.ArgumentParser(description='LinkedIn Skills Automation Orchestrator')
-    parser.add_argument('--mode', choices=['plan', 'write', 'audit', 'humanize', 'profile', 'comment', 'interactive'], default='interactive')
+    parser.add_argument('--mode', choices=['plan', 'write', 'audit', 'humanize', 'profile', 'comment', 'outreach', 'interactive'], default='interactive')
     parser.add_argument('--stage', choices=list(FUNNEL_MAPPING.keys()), default='problem', help='Hireomatic funnel stage')
     parser.add_argument('--file', help='Path to file for audit or humanize')
     parser.add_argument('--topic', default='', help='Custom topic for post writing')
-    parser.add_argument('--url', help='Target LinkedIn URL for comment drafting')
+    parser.add_argument('--url', help='Target LinkedIn URL for comment drafting or profile fetching')
+    parser.add_argument('--name', help='Connection name for outreach')
+    parser.add_argument('--headline', help='Connection headline for outreach')
+    parser.add_argument('--company', help='Connection company for outreach')
+    parser.add_argument('--job', help='Job title recently posted by connection')
     args = parser.parse_args()
 
     print('=' * 68)
@@ -522,11 +533,34 @@ def main():
                 f.write(f'- {b}\n')
         print(f'\nSaved profile configuration to: {prof_file}')
 
+    elif args.mode == 'outreach':
+        from scripts.linkedin_outreach import generate_outreach_message, save_outreach_draft
+        name = args.name or 'there'
+        headline = args.headline or 'HR and Talent Acquisition Specialist'
+        msg = generate_outreach_message(
+            name=name,
+            headline=headline,
+            company=args.company,
+            job_posted=args.job
+        )
+        meta = {
+            'headline': headline,
+            'company': args.company,
+            'job_posted': args.job
+        }
+        saved_path = save_outreach_draft(name, msg, meta)
+        print('\n--------------------------------------------------')
+        print(f'PERSONALIZED OUTREACH FOR: {name}')
+        print('--------------------------------------------------\n')
+        print(msg)
+        print('\n--------------------------------------------------')
+        print(f'Draft saved to: {saved_path}')
+
     elif args.mode == 'interactive':
-        print('\nHireomatic Funnel Options:')
+        print('\nHireomatic Automation Options:')
         print('  --mode plan                    Generate 7-Day Funnel Content Calendar')
-        print('  --mode write --stage [stage]   Write post for specific Funnel Stage:')
-        print('       stages: education, problem, product, use-case, case-study, free-offer, demo')
+        print('  --mode write --stage [stage]   Write post for specific Funnel Stage')
+        print('  --mode outreach --name [name]  Generate personalized connection outreach')
         print('  --mode profile                 View & Export Optimized Profile')
         print('  --mode audit --file [path]     Audit a post draft against 2026 rules')
 

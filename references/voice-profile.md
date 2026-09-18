@@ -88,3 +88,28 @@ Don't make every post a sales pitch. Rotate through the funnel:
 - Overlay position: bottom-right
 - Visual style default: minimal modern typography, clean dark/light contrast cards, high-signal data charts
 - Card style: brand
+
+## 7. New Connection Outreach Playbook
+
+When a new connection accepts or is added, send a personalized message tailored to:
+1. Their specific role/headline (HR, Talent Acquisition, Engineering, Founder).
+2. If they recently posted a job opening, acknowledge their active search.
+3. Present the 1 Month FREE / 100 AI interviews trial.
+4. Contact info: aaleen@technest.ventures | www.hireomatic.com
+
+### Standard Outreach Template:
+```
+Hi [FirstName], great to connect!
+I noticed your experience as an [Role/Headline] [at Company], with a strong focus on [Focus Areas]. [Optional: I also saw that you recently posted about hiring for a [JobRole]!] I thought I’d reach out because Hireomatic can help HR teams automate candidate screening and first-round interviews, while making the overall hiring process faster and more efficient.
+
+🎁 Special offer for first-time users: 
+✅ 1 Month FREE 
+✅ Up to 100 AI interviews 
+✅ Use it for your active hiring requirements 
+✅ No long-term commitment to get started
+
+Would you be open to a 15-minute demo? I’d be happy to show you how Hireomatic can fit into your recruitment workflow.
+
+📧 aaleen@technest.ventures
+🔗 www.hireomatic.com
+```
