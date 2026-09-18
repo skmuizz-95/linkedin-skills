@@ -37,7 +37,8 @@ How your writing actually sounds. Be specific; examples beat adjectives.
 
 ## 2. Who you are and who you write for
 
-- You are: Muizz Shaikh — Founder & Builder at Hireomatic (building AI recruitment automation & candidate intelligence workflows).
+- You are: Aaleen Mirza — Founder & Builder at Hireomatic (building AI recruitment automation & candidate intelligence workflows).
+- LinkedIn Profile: https://www.linkedin.com/in/aaleen-mirza-802389313/
 - Your audience (ICP): Founders, Heads of Talent, Hiring Managers, Tech Leaders, Recruiters, and Engineering Leaders hiring technical talent.
 - Your content pillars & distribution mix:
   - **35% Educational** (teach recruiters and engineering leads something useful)
@@ -69,7 +70,7 @@ Don't make every post a sales pitch. Rotate through the funnel:
 | **Free Offer** | Free Trial / Beta | "DM 'AI100' for early access / free trial credit" |
 | **Product Demo** | Demo | "DM 'DEMO' to get a recorded walkthrough" |
 
-- Primary link: https://hireomatic.com (or bio link / GitHub).
+- Primary link: https://hireomatic.com (or profile: https://www.linkedin.com/in/aaleen-mirza-802389313/).
 - Where links go: First comment only (never inside post body, to avoid LinkedIn reach penalties).
 - Core rule: Value-first, match CTA strictly to content type.
 

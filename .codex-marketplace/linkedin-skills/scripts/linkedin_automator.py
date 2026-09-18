@@ -391,7 +391,7 @@ def generate_weekly_plan(niche: str = 'AI Recruitment & Founder Engineering') ->
     return plan
 
 def optimize_profile():
-    """Return optimized profile components for Muizz Shaikh / Hireomatic."""
+    """Return optimized profile components for Aaleen Mirza / Hireomatic."""
     return {
         'headline': 'Founder @ Hireomatic | Building Autonomous AI Recruitment Systems | Helping Tech Teams Screen Candidates 10x Faster with Zero Noise',
         'about': """Traditional hiring is broken. Inboxes are flooded with thousands of AI-crafted resumes that all say the exact same buzzwords.
@@ -424,7 +424,7 @@ def main():
     args = parser.parse_args()
 
     print('=' * 68)
-    print('  LINKEDIN AUTOMATION SUITE — MUIZZ SHAIKH / HIREOMATIC')
+    print('  LINKEDIN AUTOMATION SUITE — AALEEN MIRZA / HIREOMATIC')
     print('  Hireomatic Funnel: Attention -> Problem -> Education -> Product -> Demo')
     print('=' * 68)
 
