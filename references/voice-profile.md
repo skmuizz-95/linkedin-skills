@@ -50,11 +50,27 @@ How your writing actually sounds. Be specific; examples beat adjectives.
 - Always: Number-first line or odd-precision metric in the first 2 lines; closing question to spark discussion; 900-1300 characters target; first-person perspective.
 - Never: No em dashes (`—`), no opening questions, no engagement bait ("Comment 'HIRE' to get my PDF"), no generic motivational quotes.
 
-## 4. Links and CTA
+## 4. Links, Funnel & CTA Mapping
 
-- Primary link you point people to: https://hireomatic.com (or bio link / GitHub).
-- Where it goes: First comment only (never inside post body, to avoid LinkedIn algorithm reach penalties).
-- Your CTA style: Thoughtful closing question to invite peers/founders into the comments.
+### Hireomatic's Funnel Stages:
+Don't make every post a sales pitch. Rotate through the funnel:
+`Attention → Problem → Education → Product → Demo → Free Trial → Beta User → Customer`
+
+### Content → CTA Mapping Table:
+| Content Type | Funnel Stage | Recommended CTA |
+|---|---|---|
+| **Educational** | Attention / Education | "Save this framework or share with an engineering lead" |
+| **Poll** | Attention / Engagement | "Vote below" |
+| **Problem** | Problem | "What is your biggest bottleneck? Let's discuss in the comments" |
+| **Product** | Product | "See full workflow / demo preview in the first comment" |
+| **Use Case** | Product / Demo | "DM me to see how we set this up for your team" |
+| **Case Study** | Demo / Validation | "Book a 15-min walkthrough (link in first comment or DM)" |
+| **Free Offer** | Free Trial / Beta | "DM 'AI100' for early access / free trial credit" |
+| **Product Demo** | Demo | "DM 'DEMO' to get a recorded walkthrough" |
+
+- Primary link: https://hireomatic.com (or bio link / GitHub).
+- Where links go: First comment only (never inside post body, to avoid LinkedIn reach penalties).
+- Core rule: Value-first, match CTA strictly to content type.
 
 ## 5. Signature examples
 
