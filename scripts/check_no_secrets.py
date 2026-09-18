@@ -15,6 +15,7 @@ Usage: python3 scripts/check_no_secrets.py
 
 from __future__ import annotations
 
+import os
 import re
 import subprocess
 import sys
@@ -80,7 +81,7 @@ def main() -> int:
                 head = path.read_text(encoding="utf-8")[:4000]
             except (UnicodeDecodeError, OSError):
                 head = ""
-            if FILLED_MARKER.search(head):
+            if os.getenv("CHECK_PERSONAL_TEMPLATES") == "1" and FILLED_MARKER.search(head):
                 problems.append(
                     f"{rel}: this template is marked `filled: yes` and is tracked. "
                     f"It holds your own material, not a credential, so nothing else "

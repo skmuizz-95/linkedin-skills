@@ -17,3 +17,6 @@ testing/
 # Playwright MCP session artifacts
 .playwright-mcp/
 /fk-*
+
+# Generated LinkedIn drafts
+drafts/

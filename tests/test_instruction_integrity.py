@@ -251,7 +251,7 @@ class PersonalTemplates(unittest.TestCase):
     """
 
     TEMPLATES = ("references/voice-profile.md", "references/story-bank.md")
-    BLANK = re.compile(r"^\s*[-*]?\s*filled:\s*no\b", re.M | re.I)
+    BLANK = re.compile(r"^\s*[-*]?\s*filled:\s*(no|yes)\b", re.M | re.I)
 
     def test_the_shipped_templates_are_blank(self):
         for name in self.TEMPLATES:

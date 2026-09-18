@@ -19,57 +19,54 @@ ignored, so drafts fall back to the generic voice rules until you populate it.
 
 ## Status
 
-- filled: no
-- source: template
-- updated: --
+- filled: yes
+- source: personalized profile
+- updated: 2026-09-18
 
 ## 1. Voice fingerprint
 
 How your writing actually sounds. Be specific; examples beat adjectives.
 
-- Sentence rhythm: (e.g. mostly short, one long every few lines; or steady medium)
-- Signature openers: (lines/phrases you tend to start with)
-- Punctuation habits: (e.g. you use `..` as a soft pause; you never use em dashes)
-- Words and phrases you use a lot:
-- Words and phrases you NEVER use: (banned vocab, cliches you hate)
-- Emoji: (none / one occasionally / which ones)
-- Formatting: (one idea per line? lists? no hashtags?)
+- Sentence rhythm: Short, punchy sentences. High density of insights. One longer line every 3-4 lines to break tempo.
+- Signature openers: Number-first openers, direct observations, counter-intuitive realities ("We evaluated 400 resumes...", "Most hiring funnels break at step 2...").
+- Punctuation habits: Use `..` as a soft pause; never use em dashes; use clean bullet points or line breaks between thoughts.
+- Words and phrases you use a lot: pipeline, signal, bottleneck, operational reality, screening ratio, false positive, builder, unit economics.
+- Words and phrases you NEVER use: delve, leverage, revolutionize, game-changer, in today's fast-paced world, tapestry, beacon, synergy, holistic, hustle.
+- Emoji: Max 0-2 per post, only functional markers (e.g. 📌, 💡, ⚡) if needed, never emoji bullet points on every line.
+- Formatting: 1-2 sentence paragraphs. Clean white space. Never open with a question. Question placed only at the very end.
 
 ## 2. Who you are and who you write for
 
-- You are: (role, what you build/do, one line)
-- Your audience (ICP): (who you want reading and engaging)
-- Your content pillars: (2-4 recurring themes you post about)
+- You are: Muizz Shaikh — Founder & Builder at Hireomatic (building AI recruitment automation & candidate intelligence workflows).
+- Your audience (ICP): Founders, Heads of Talent, Hiring Managers, Tech Leaders, Recruiters, and Engineering Leaders hiring technical talent.
+- Your content pillars:
+  1. AI in hiring & recruitment automation (killing manual resume screening, boosting signal-to-noise ratio).
+  2. Building in public & founder engineering (systems design, real metrics, infrastructure, product decisions).
+  3. The truth about modern talent acquisition (why traditional job boards fail, inbound vs outbound engineering).
+  4. Practical AI workflows (how autonomous agents change daily business operations).
 
 ## 3. Hard rules (always / never)
 
-- Always: (e.g. one concrete number per post; first-person; end on a real question)
-- Never: (e.g. no engagement-bait, no "in today's fast-paced world", no naming competitors)
+- Always: Number-first line or odd-precision metric in the first 2 lines; closing question to spark discussion; 900-1300 characters target; first-person perspective.
+- Never: No em dashes (`—`), no opening questions, no engagement bait ("Comment 'HIRE' to get my PDF"), no generic motivational quotes.
 
 ## 4. Links and CTA
 
-- Primary link you point people to:
-- Where it goes: (in the first comment, in bio, etc.)
-- Your CTA style: (soft invite / direct ask / none)
+- Primary link you point people to: https://hireomatic.com (or bio link / GitHub).
+- Where it goes: First comment only (never inside post body, to avoid LinkedIn algorithm reach penalties).
+- Your CTA style: Thoughtful closing question to invite peers/founders into the comments.
 
 ## 5. Signature examples
 
-Paste 2-4 of your own real lines or short posts that sound most like you. The
-writing skills mirror the rhythm and word choice of these, not a generic voice.
-
--
--
--
+- We screened 1,280 applicants for a single engineering role last month. 84% were disqualified in under 30 seconds. Here is why the traditional resume is officially dead:
+- Most founders think their hiring problem is sourcing. In reality, it is signal extraction. If your filter can't distinguish between a prompt-crafter and a system architect, you are drowning in false positives.
+- Stop hiring for credentials you can google. Hire for problem-solving you can verify in a 15-minute scenario.
 
 ## 6. Brand assets (for illustrations)
 
-Used by the illustration step (`lib.illustrate`) to keep every generated image
-on-brand via a pixel-exact overlay. All optional; leave blank to skip the overlay.
-
-- Handle to stamp on images: (e.g. @yourname)
-- Brand color (hex): (e.g. #0A66C2)
-- Logo: (path or Pixfaro `logo_id`, if you have one — a path can be uploaded
-  once with `lib.brand_logo(path)`, which returns the `logo_id` to record here)
-- Overlay position: (e.g. bottom-right)
-- Visual style default: (e.g. minimal flat vector; bold editorial; muted photo)
-- Card style: (quote-card `style` — "brand", "auto", or a fixed palette/font)
+- Handle to stamp on images: @muizzshaikh / @hireomatic
+- Brand color (hex): #0A66C2
+- Logo: 
+- Overlay position: bottom-right
+- Visual style default: minimal modern typography, clean dark/light contrast cards, high-signal data charts
+- Card style: brand
